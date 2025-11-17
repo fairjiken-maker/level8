@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Code Owl</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Yann Granjon" id="JSON" version="1">JSON</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_GoogleWebFontLoader" version="0.100000001">Web font loader</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_MomenJS" version="0.100000001">Moment</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Rex.Rainbow" id="rex_TagText" version="0.100000001">Tag Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_RotateTo" version="0.100000001">RotateTo</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_text_scrolling" version="1">Scrolling</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1536</width>
+        <height>736</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Button">
+            <object-type name="ResetButton" sid="453873853303867">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="RunButton" sid="105377201421671">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="HintButton" sid="225627186726006">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="NextButton" sid="224732653896872">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Text">
+            <object-type name="CodeInput" sid="887570955122202">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="CodeNumber" sid="142713601037864">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="TerminalLog" sid="549634390441477">
+                <plugin id="rex_TagText" />
+                <behaviors>
+                    <behavior-type name="Scrolling" sid="922560584277106">
+                        <behavior id="Rex_text_scrolling" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
+        <object-folder name="Essential">
+            <object-type name="Function" sid="356832141283631">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="LocalStorage" sid="918837618804789">
+                <plugin id="LocalStorage" />
+            </object-type>
+            <object-type name="Audio" sid="172400513617092">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Browser" sid="605109363864672">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="AJAX" sid="734182123239960">
+                <plugin id="AJAX" />
+            </object-type>
+            <object-type name="WebFontLoader" sid="560838053424712">
+                <plugin id="Rex_GoogleWebFontLoader" />
+            </object-type>
+            <object-type global="1" name="Moment" sid="536827041898529">
+                <plugin id="Rex_MomenJS" />
+            </object-type>
+            <object-type name="Mouse" sid="769325080365926">
+                <plugin id="Mouse" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Data">
+            <object-type global="1" name="LevelsData" sid="915764090131726">
+                <plugin id="JSON" />
+            </object-type>
+            <object-type global="1" name="ProgressData" sid="781699827024990">
+                <plugin id="JSON" />
+            </object-type>
+            <object-type global="1" name="Hints" sid="702878256124102">
+                <plugin id="JSON" />
+            </object-type>
+            <object-type global="1" name="Variables" sid="449799731877387">
+                <plugin id="Dictionary" />
+            </object-type>
+            <object-type global="1" name="Stack" sid="115701921944245">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Object">
+            <object-type name="Player" sid="755372291062325">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="InitialDirection" sid="502709687830842" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="MoveTo" sid="350936441037823">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                    <behavior-type name="RotateTo" sid="606490344596888">
+                        <behavior id="Rex_RotateTo" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295532126451050" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PPL\CodeOwl\up.png">
+                            <collision-poly>
+                                <point x="0.992" y="0.008" />
+                                <point x="0.992" y="0.992" />
+                                <point x="0.00800002" y="0.992" />
+                                <point x="0.00800002" y="0.008" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Portal" sid="729047910411417">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542168218295820" speed="5">
+                        <frame duration="1" hotspotX="0.508" hotspotY="0.48" original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\PORTAL BLUE-Sheet.png">
+                            <collision-poly>
+                                <point x="0" y="0.1728" />
+                                <point x="1" y="0.3264" />
+                                <point x="1" y="0.6592" />
+                                <point x="0" y="0.7616" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="River" sid="116343227600596">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Trigger" sid="256906056155883" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839866158074132" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_01.png">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Beacon" sid="848171235060195">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527204709264737" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Crystal" sid="684094554362638">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351859341682025" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Bridge" sid="864984791074923">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="VariableName" sid="519831148364967" type="string" />
+                    <instance-variable name="VariableValue" sid="673347618851584" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="630582896496160" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_141.png">
+                            <collision-poly>
+                                <point x="0.09375" y="0.09375" />
+                                <point x="0.90625" y="0.09375" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Ship" sid="495894259803125">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="VariableName" sid="393025844169463" type="string" />
+                    <instance-variable name="VariableValue" sid="462816811847627" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="MoveTo" sid="906509950296917">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985512144336297" speed="5">
+                        <frame duration="1" hotspotX="0.332" hotspotY="0.656" original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\2 Objects\Other\Ship1.png">
+                            <collision-poly>
+                                <point x="0.09375" y="0.09375" />
+                                <point x="0.5" y="0" />
+                                <point x="0.90625" y="0.09375" />
+                                <point x="0.90625" y="0.90625" />
+                                <point x="0.5" y="1" />
+                                <point x="0.09375" y="0.90625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rock" sid="952246751003279">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="770392130237744">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281621904118678" speed="5">
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\2 Objects\Rocks\1.png">
+                            <collision-poly>
+                                <point x="0.205128" y="0.170213" />
+                                <point x="0.487179" y="0.0212766" />
+                                <point x="0.666667" y="0.276596" />
+                                <point x="0.923077" y="0.489362" />
+                                <point x="0.846154" y="0.87234" />
+                                <point x="0.487179" y="0.93617" />
+                                <point x="0.0512821" y="0.957447" />
+                                <point x="0.0769231" y="0.489362" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Tree" sid="864062735492170">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="121106865491201">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621735180101815" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\2 Objects\Trees\3.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.21875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.75" y="0.21875" />
+                                <point x="0.964286" y="0.5" />
+                                <point x="0.857143" y="0.875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.214286" y="0.8125" />
+                                <point x="0.0714286" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Gate" sid="590416264870862">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="VariableValue" sid="180434174185575" type="string" />
+                    <instance-variable name="VariableName" sid="993856193801051" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Solid" sid="596918028067983">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="tutup" pingpong="0" repeatcount="1" repeatto="0" sid="601077817801090" speed="5">
+                        <frame duration="1" hotspotX="0.528" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\wooden_door.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.470588" y="0.9375" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="buka" pingpong="0" repeatcount="1" repeatto="0" sid="653720956353905" speed="5">
+                        <frame duration="1" hotspotX="0.528" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\wooden_door_b.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.470588" y="0.9375" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Logic" sid="178624873935646">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="VariableName" sid="700406751359605" type="string" />
+                    <instance-variable name="VariableValue" sid="243265678387046" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494601172328682" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pagar1" sid="533586820436126">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="432420937383012">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="782127673443905" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_118.png">
+                            <collision-poly>
+                                <point x="0.53125" y="0.53125" />
+                                <point x="0.46875" y="0.53125" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.03125" y="0.96875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pagar2" sid="923098506293613">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="759779249668995">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="447917552629772" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_119.png">
+                            <collision-poly>
+                                <point x="0.53125" y="0.53125" />
+                                <point x="0.46875" y="0.53125" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.03125" y="0.96875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pagar3" sid="695497619289055">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="550720142546774">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428668084649575" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_120.png">
+                            <collision-poly>
+                                <point x="0.53125" y="0.53125" />
+                                <point x="0.46875" y="0.53125" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.03125" y="0.96875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pagar4" sid="816533968850336">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="458062191442291">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976408818737943" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_106.png">
+                            <collision-poly>
+                                <point x="0.03125" y="0.03125" />
+                                <point x="0.125" y="0.875" />
+                                <point x="0.125" y="0.5" />
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.03125" y="0.96875" />
+                                <point x="0.0625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pagar5" sid="861914981170986">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="733199453655546">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472533216456112" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Asus\OneDrive\Dokumen\assetPPL\craftpix-net-280167-free-level-map-pixel-art-assets-pack\1 Tiles\Map_tile_108.png">
+                            <collision-poly>
+                                <point x="0.875" y="0.875" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.9375" y="0.5" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="0.875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Background">
+            <object-type name="CodeEditorBackground" sid="221169809279933">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="152119119135471" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ConsoleBackground" sid="789344641476640">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555427897817200" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Overlay" />
+        <object-type name="Environment" sid="718225764425795">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Pin" sid="162193530789738">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\joki\new\Construct-2\craftpix-net-280167-free-level-map-pixel-art-assets-pack\2 Objects\Grass\6.png" />
+            <tiles />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Objects" plugin-id="Sprite" sid="567401437889398">
+            <members>
+                <member>Beacon</member>
+                <member>Bridge</member>
+                <member>Crystal</member>
+                <member>Gate</member>
+                <member>Logic</member>
+                <member>pagar1</member>
+                <member>pagar2</member>
+                <member>pagar3</member>
+                <member>pagar4</member>
+                <member>pagar5</member>
+                <member>Player</member>
+                <member>Portal</member>
+                <member>River</member>
+                <member>Rock</member>
+                <member>Ship</member>
+                <member>Tree</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="ID" sid="244369539572173" type="number" />
+            </instance-variables>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Home.xml</layout>
+        <layout>InGame.xml</layout>
+        <layout>RoadMap.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ES_InGame.xml</event-sheet>
+        <event-sheet>ES_Core.xml</event-sheet>
+        <event-sheet>ES_ObjectBehavior.xml</event-sheet>
+        <event-sheet>ES_Utils.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="LocalStorage" uid="11" />
+        <global-instance type="Function" uid="8" />
+        <global-instance type="Audio" uid="15">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="16" />
+        <global-instance type="AJAX" uid="17" />
+        <global-instance type="WebFontLoader" uid="26">
+            <properties>
+                <timeout>5</timeout>
+                <api-source>Web</api-source>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="31" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="Error Code.ogg" />
+        <file name="Footstep.ogg" />
+        <file name="Game Level Complete.ogg" />
+        <file name="Game Start Button.ogg" />
+        <file name="Item Pick Up.ogg" />
+        <file name="Stage Failed.ogg" />
+        <file name="UI Click Button.ogg" />
+        <file name="UI Pop Up Sound.ogg" />
+        <file name="Water Splash.ogg" />
+        <file name="Whispering Pines (Chapter In Game).ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+            <file name="run.png" />
+            <file name="kembali.png" />
+        </file-folder>
+        <file-folder name="Level">
+            <file name="levels.json" />
+        </file-folder>
+    </files-folder>
+</c2project>
